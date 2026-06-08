@@ -1,0 +1,124 @@
+
+#contact{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color: wheat;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+    padding: 10rem 2rem;
+    overflow-x: hidden;
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        padding: 2rem;
+    }
+}
+
+ .e{
+        margin-top: 3rem;
+        text-transform: lowercase;
+        font-size: 1.6rem;
+    }
+
+.form-con{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+form{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    }
+
+
+    input{
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+        border-radius: 3rem;
+        border: none;
+        background-color: white;
+        color: black;
+    }
+    textarea{
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+        border-radius: 3rem;
+        height: 150px;
+        border: none;
+        background-color: white;
+        color: black;
+    }
+
+    .sub{
+        background: linear-gradient(#0356c5,#02060e);
+        color: rgb(237, 237, 237);
+        border-radius: 5rem;
+        width: 100%;
+        text-transform: capitalize;
+        padding: 0.7rem 3rem;
+        font-size: 1.3rem;
+        margin: auto;
+        border: 0.2px transparent;
+        cursor: pointer;
+    }
+
+    .sub:hover{
+        transition: 0.4s;
+        opacity: 0.6;
+        border: 0.2px solid wheat;
+    }
+
+@media (max-width:800px) {
+    form{
+        display: flex;
+        width: 70%;
+    }
+    input{
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+        border-radius: 3rem;
+        border: none;
+        background-color: white;
+        color: black;
+    }
+    textarea{
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+        border-radius: 3rem;
+        height: 150px;
+        border: none;
+        background-color: white;
+        color: black;
+    }
+
+    .e{
+        margin-top: 3rem;
+        text-transform: lowercase;
+        font-size: 1.2rem;
+    }
+
+
+    #contact > h2{
+        
+        text-align: center;
+        font-size: 2rem;
+        padding-bottom: 4rem;
+    
+    } 
+
+    .sub{
+        width: 100%;
+    }
+
+}

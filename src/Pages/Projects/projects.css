@@ -1,0 +1,142 @@
+
+#projects{
+    width: 100%;
+    background-color: #000;
+    color: wheat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 10rem;
+    padding-bottom: 100vh;
+    text-transform: capitalize;
+
+    .h2{
+        font-size: 2rem;
+    }
+}
+
+
+
+.pro-card{
+    width: 85%;
+    min-height: 60vh;
+    background: linear-gradient(#0356c5,#02060e);
+    color:wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 4rem;
+}
+
+.part1{
+    width: 60%;
+    height: 100%;
+
+    video{
+        width: 100%;
+        height: 100%;
+        border-radius: 4rem;
+    }
+}
+
+.part2{
+    width: 40%;
+    height: 100%;
+    padding:2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    .btns{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .source,.preview{
+        background-color: rgb(234, 234, 234);
+        color: rgb(25, 25, 25);
+        border: 0.3px solid transparent;
+        border-radius: 5rem;
+        text-transform: capitalize;
+        padding: 0.7rem 3rem;
+        font-size: 1.3rem;
+        box-shadow: 5px 5px 8px #2e2828a7;
+    }
+
+    .source:hover{
+        background-color: transparent;
+        cursor: pointer;
+        color: wheat;
+        border: 0.3px solid rgb(244, 244, 244);
+        transition: ease-in-out 0.5s;
+    }
+
+    .preview:hover{
+        background-color: transparent;
+        cursor: pointer;
+        color:wheat;
+        border: 0.3px solid rgb(244, 244, 244);
+        transition: ease-in-out 0.5s;
+    }
+
+}
+
+@media (max-width:800px){
+    .pro-card{
+        border-radius: 1rem;
+    width: 90%;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.part1{
+    width: 85vw;
+    height:auto;
+
+    video{
+        border-radius: 2rem;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.part2{
+    width: 100%;
+    h1{
+        font-size: 1.5rem;
+        white-space: nowrap;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    h4{
+        font-size: 0.7rem;
+    }
+
+    .btns{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        
+        button{
+            font-size: 1.2rem;
+            padding: 0.5rem 1.2rem;
+        }
+    }
+
+}
+
+}

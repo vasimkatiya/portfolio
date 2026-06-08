@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    background-color: #02060e;
+    color: wheat;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 1.5rem;
+}
+
+.menu{
+    font-size: 2.1rem;
+    display: none;
+}
+
+ul{
+    display: flex;
+    gap: 2rem;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: wheat;
+
+}
+
+li{
+    /* background-color: red; */
+    padding: 0.5rem 1.3rem;
+    background-color: #071022;
+    border-radius: 2rem;
+}
+
+li:hover{
+    background-color: wheat;
+    transition: ease 0.5s;
+    a{
+        color: #071022;
+    }
+}
+
+
+
+.s{
+    display: none;
+}
+
+.hide{
+    display: none;
+}
+
+@media (max-width:760px) {
+    .f{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .show{
+        display: block;
+        position: absolute;
+        top: 100%;
+        li{
+            width: 100vw;
+            text-align: center;
+            padding: 2rem;
+            cursor: pointer;
+            background-color: #071022;
+            border-radius: 0;
+        }
+        li:hover{
+            background-color: #252d3d;
+        }
+    }
+}

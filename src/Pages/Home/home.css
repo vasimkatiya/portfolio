@@ -1,0 +1,136 @@
+
+#home{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(#0356c5,#9c9c9c);
+    font-family: "PT Sans", sans-serif;
+    color: white;
+    position: relative;
+    z-index: 50;
+    overflow-x: hidden;
+    
+    .overlay{
+        overflow-y: hidden;
+        position: absolute;
+        opacity: 0.36;
+        width: 100vw;
+        height: 90vh;
+        background-color: #02060e;
+    }
+}
+
+.home-con{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    h1{
+        font-size: 4rem;
+        font-weight: 400;
+        z-index: 10;
+    }
+
+    h2{
+        font-size: 2.3rem;
+              font-weight: 400;
+    }
+    h4{
+        z-index: 10;
+        width: 60%;
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 300;
+    }
+
+}
+
+.social{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7rem;
+    justify-content: center;
+    
+}
+.socio > img{
+    width: 40px;
+}
+
+.socio{
+    cursor: pointer;
+    padding: 1rem;
+    background-color: rgba(227, 227, 227, 0.834);
+    border-radius: 50%;
+}
+
+.socio:hover{
+    opacity: 0.6;
+    transition: 0.4s;
+}
+
+.profession{
+    width: 100%;
+    height: 3.2rem;
+    overflow: hidden;
+}
+
+.role{
+    animation:role-changes 7s infinite ;
+}
+
+@keyframes role-changes {
+    20%{
+        transform: translateY(-100%);
+    }
+    40%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-300%);
+    }
+    80%{
+        transform: translateY(-400%);
+    }
+    100%{
+        transform: translateY(-408%);
+    }
+}
+
+@media (max-width:800px) {
+    .profession{
+    width: 100%;
+    height: 1.7rem;
+    overflow: hidden;
+}
+
+    .social{
+        gap: 2rem;
+    }
+    .socio > img{
+        width: 25px;
+    }
+
+   .home-con{
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    h4{
+        font-size: 1rem;
+        width: 90%;
+    }
+   }
+}
