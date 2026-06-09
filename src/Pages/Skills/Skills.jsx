@@ -49,11 +49,6 @@ const Skills = () => {
       img:'../skills/psql.png'
     },
     {
-      cls:'native',
-      name:"React Native",
-      img:'../skills/react.png'
-    },
-    {
       cls:'tailwind',
       name:"TailwindCSS",
       img:'../skills/tailwind.png'
